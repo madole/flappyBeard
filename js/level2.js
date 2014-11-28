@@ -22,7 +22,7 @@ var level2 = {
     //jump key handler
     var spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     spaceKey.onDown.add(this.jump, this);
-
+    game.input.onDown.add(this.jump, this);
     //pipes
     this.pipes = game.add.group();
     this.pipes.enableBody = true;

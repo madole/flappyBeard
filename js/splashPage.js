@@ -23,6 +23,7 @@ var splashState = {
     var spaceKey      = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     var cKey          = this.game.input.keyboard.addKey(Phaser.Keyboard.C);
     spaceKey.onDown.add(this.startGame, this);
+    game.input.onDown.add(this.startGame, this);
     cKey.onDown.add(this.controls, this);
   },
   startGame: function() {
